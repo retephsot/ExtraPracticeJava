@@ -1,11 +1,9 @@
 package com.practice.practice;
 
-
 public class arraypractice1 {
 	
 	public static int A;
-	public static int B;
-	
+	public static int B;	
 	public static int length;
 	public static int resultsB;
 	
@@ -14,8 +12,6 @@ public class arraypractice1 {
 		length = 5;
 		
 		int arrayA[] = {1,10,1,8,2};
-		
-		//int[] arrayA = new int[length];
 		
 	 resultsB = isArrayinOrder(arrayA);
 	
@@ -78,10 +74,7 @@ public class arraypractice1 {
 		{
 			result = 1;
 		}
-		return result;
-		
+		return result;	
 	}
 	
-	
-
 }
