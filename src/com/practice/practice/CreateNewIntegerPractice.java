@@ -1,30 +1,26 @@
 package com.practice.practice;
 
 public class CreateNewIntegerPractice {
-		
-		public static int a = 2467;
+	
+		public static int a = 467;
 		public static int b = 345;
 		public static String results;
 		public static int resultInt2;
 		public static int resultInt;
 		public static int length;
 		
-		
-		
-
 		public static void main(String[] args) {
 
-		// Start Here
 			String aSTR = String.valueOf(a);
 			String bSTR = String.valueOf(b);				
 			
 			resultInt2 = createString(aSTR, bSTR);
 			
 			System.out.println("The int value of resultInt2 is " + resultInt2);
-			
-			
+					
 		}
-		
+			//takes int a and b, converts them to string add them together inter-weaving to create a new string
+			//then converts back to int and displays the new int value
 			public static int createString(String aSTR, String bSTR)
 			{
 				length = (aSTR.length() + bSTR.length());
@@ -51,7 +47,7 @@ public class CreateNewIntegerPractice {
 					results = "";
 					
 					for ( x = 0; x < maxLength; x++)
-					//do
+
 					{
 				
 						if (x < aSTR.length()) {
@@ -66,22 +62,15 @@ public class CreateNewIntegerPractice {
 							//System.out.println("the value of bSTR.charAt(" + x + ") is " + bSTR.charAt(x));
 						}
 
-						
-						//x++;
 						System.out.println("the value of results is now " + results);
 													
 					}
-					//while(x < maxLength);
 											
 				}
 				resultInt = Integer.parseInt(results);
-				
 				System.out.println("This is the value of resultInt " + resultInt);		
 				
 				return resultInt;
 			}
 				
-		
-		
-
 	}
