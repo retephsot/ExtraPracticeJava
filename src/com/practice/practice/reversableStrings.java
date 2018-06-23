@@ -5,7 +5,7 @@ public class reversableStrings {
 
 	public static int length;
 	//The test string
-	public static String str = "mom mom mom";
+	public static String str = "radar";
 	public static String results;
 	public static boolean endResults;
 	
