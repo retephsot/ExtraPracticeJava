@@ -15,8 +15,10 @@ public static void main(String[] args) {
 		hmap.put(2, "fresh");
 		hmap.put(3, "yo");
 		
+		//to get value from key 1
 		System.out.println(hmap.get(1));
 		
+		//to get all keys and values from map
 		for(Map.Entry<Integer, String> entry : hmap.entrySet()) {
 			
 			int key = entry.getKey();
@@ -24,12 +26,14 @@ public static void main(String[] args) {
 			System.out.println(key +" : " + value);
 		}
 		
+		//to get all key=value
 		for(Map.Entry kv : hmap.entrySet()) {
 			
 			System.out.println(kv);
 			
 		}
 		
+		//to get all keys 
 		for(int i : hmap.keySet()) {
 			System.out.println(i);
 		}
@@ -38,14 +42,14 @@ public static void main(String[] args) {
 		/*
 		 *  create map of DriftParts
 		 */
-		
+		//creating dmap hashmap
 		HashMap<Integer, DriftParts> dmap = new HashMap<Integer, DriftParts>();
 		// create DriftParts
 		DriftParts d1 = new DriftParts(1, "rollcenteradjuster", "gives 60degree of steering angle", "gktech", "$200", 10 );
 		DriftParts d2 = new DriftParts(2, "coilovers", "gives suspension adjustability", "Tein", "$1200", 5 );
 		DriftParts d3 = new DriftParts(3, "LSD", "locks power to both wheels", "Kaaz", "$1200", 4 );
 		
-		//add DriftParts to dmap
+		//add DriftParts objects to dmap
 		
 		dmap.put(1, d1);
 		dmap.put(2, d2);
