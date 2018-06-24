@@ -2,9 +2,8 @@ package com.practice.practice;
 
 public class DriftParts {
 	
-	int id;
+	int id, quantity;
 	String name,description,maker,price;
-	int quantity;
 	
 	public DriftParts(int id, String name, String description, String maker, String price, int quantity) {
 		
