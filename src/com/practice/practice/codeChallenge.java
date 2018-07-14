@@ -9,7 +9,11 @@ public class codeChallenge {
 		
 	int[] intArray = new int[] {1,1,2,3,3};
 
-		System.out.println("the array values are " + intArray[4]);
+		System.out.println("the array values are :");
+		for(int i = 0; i < intArray.length; ++i) {
+			
+			System.out.println("the value of index " + i + " is " + intArray[i]);
+		}
 		
 		resultNumber = lonelyInteger(intArray);
 		
