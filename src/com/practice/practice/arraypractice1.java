@@ -8,10 +8,10 @@ public class arraypractice1 {
 	public static int resultsB;
 	
 	public static void main(String[] args) {
-		
-		length = 5;
-		
+				
 		int arrayA[] = {1,10,1,8,2};
+		
+		length = arrayA.length;
 		
 	 resultsB = isArrayinOrder(arrayA);
 	
