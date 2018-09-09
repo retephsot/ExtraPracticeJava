@@ -17,10 +17,13 @@ public class SearchWord {
 		
 		Map<String, Integer> wordCounts = new HashMap<String, Integer>();
 		
+		int tempCount = 0;
 		int mBCount = 0;
+		String foundWord = "yo";
 		
 		//.useDelimiter("[',.:;()?!\" \" \"]");
 		Scanner scan = new Scanner(new FileReader("C:\\Temp\\macbeth.txt"));
+
 		
 		ArrayList<String> words = new ArrayList<String>();
 				
@@ -49,6 +52,42 @@ public class SearchWord {
 			}
 			
 		}  */
+		
+		for(int i = 0; i < words.size(); ++i) {
+			
+			if(words.get(i).isEmpty() || words.get(i).length()<=4) {
+				words.remove(i);
+			}
+		}
+		
+		for(int i = 0; i < words.size(); ++i) {
+			
+//			int tempCount = 0;
+			System.out.println("the word at index " + i + " is " + words.get(i));
+			
+			
+			for(int j = 0; j< words.size(); ++j) {
+				int myCount = 0;
+				if(words.get(i).equals(words.get(j))) {
+					
+					myCount++;	
+					
+					System.out.println("the value of myCount is now" + myCount);																					
+				}	
+				
+				if(myCount > tempCount) {
+					
+					tempCount = myCount;
+					foundWord = words.get(i);
+				}
+				
+				
+				
+			}
+			
+			
+		}
+		System.out.println("The total arraylist count now is " + words.size());
 	 
 		for(String word : words2) {
 			
@@ -81,6 +120,8 @@ public class SearchWord {
         System.out.println("The most occuring word is " + sortedCounts.get(0));
         
         System.out.println("The sec most occuring word is " + sortedCounts.get(1));
+
+
     }
 
 }
