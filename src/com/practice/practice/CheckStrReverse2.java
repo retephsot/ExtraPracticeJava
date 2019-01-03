@@ -29,7 +29,7 @@ public class CheckStrReverse2 {
 		String revWord = "";
 		boolean results = false;
 		
-		for(int i = myStr.length()-1; i >0; --i) {
+		for(int i = myStr.length()-1; i >=0; i--) {
 			
 			revWord += myStr.charAt(i);
 		}
